@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class SurveyAnswers : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    float mood = 0;
+    public static float day = 0;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public Slider slider;
+
+    void Update() 
+    {  
+        mood = slider.value;
     }
 }
